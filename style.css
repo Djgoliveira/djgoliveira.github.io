@@ -1,210 +1,281 @@
-/* 
-font-family: 'Playfair Display', serif;
-font-family: 'Poppins', sans-serif; 
-*/
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
-  
+
   a:link {
     text-decoration: none;
-    color: black;
+    color: rgb(1, 111, 255);
   }
   
   a:visited {
     text-decoration: none;
-    color: black;
+    color: rgb(1, 111, 255);
   }
   
-  a:hover {
+  li:hover {
     text-decoration: none;
-    color: white;
+    color:  rgb(255, 255, 255);
+    background-color: rgb(1, 111, 255);
+    border-radius: 10px;
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); 
   }
-  
-  
-  
-  body {
-    background-image: url("./img/3047637.jpg");
-    width: 100%;
-    background-position:center;
-    background-repeat: repeat;
-    background-size: cover;
-  }
-  
+
   header {
-    background-color: rgb(249, 206, 75);
-    padding: 5px 0;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
   }
-  
-  .menu-topo {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .menu-topo img {
-    align-self: center;
-    height: 90px;
-    width: 90px;
-  }
-  
-  .banner {
+
+  .contato {
+    background-color: rgb(1, 111, 255);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    border-radius: 50px;
+    text-align: center;
+    
+}
+
+  .menu{
     display: flex;
     justify-content: center;
-    background-color: #000000;
-    background-size: contain;
-    padding: 5px;
-  }
-  
-  .banner img {  
-    height: 100px;
-    }
-  
-  .corbanner {
-    animation-name: slidein;
-    animation-duration:10s;  
-  }
-  
-  @keyframes slidein {
-    0% { opacity: 0;}
-    100% { opacity: 1;}
-  }
-  
-  /*.responsive { 
-    background-size: contain;
-    height: auto;
+}
+
+  .menu img {    
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    align-self: center;
+    justify-content: center;
     
-  }
-  
-  .jogo {
-    color: white;
-    padding: 2px; 
-    position: absolute;
-    
-     }*/
-  
-  .lista-menu {
+}
+
+.lista-menu {
     display: flex;
-    list-style: none;
-    justify-content: space-around;
+    list-style: none;    
+    justify-content:center;
+    gap: 50px;
     align-items: center;
-    width: 300px;
-    height: 100px;
-    font-size: 20px;
-  }
-  
-  h1 {  
-    text-align: center;
-    padding: 40px;
-    font-size: 30px;
-    }
-  
-  .Card {
-    display:flex;
-    justify-content: space-evenly; 
-    align-content: center;
-  }
-  
-  .card1 {
-    display:inline-block;
-    width: 350px;
+    width: 1000px;
+    height: 50px;
+    font-size: 10px;
     
   }
-  .card2 {
-    display:inline-block;
-    width: 350px;
+
+.nome {
+    font-size: 11px;
+    color: rgb(1, 111, 255);
+}
+
+.descricao {
+    font-size: 10px;
+    color: rgb(133, 135, 138);
   }
-  
-  
-  .card3 {
-    display:inline-block;
-    width: 350px;
+
+.nome-descricao {
+    align-self: center;
+    padding: 5px;
+}
+
+.banner {    
+    display:flex;
+    justify-content: flex-end; 
+}
+
+.banner p{    
+    
+    padding: 100px;
+     align-self: center;
+    font-size: larger;
+    text-align: justify;
+
+}
+
+.banner img{  
+    display: inline-block; 
+    width: 800px;
+}
+
+div{
+    padding: 20px;
+}
+
+#fullstack {
+    display: flex;
+    color: rgb(1, 111, 255);
+    padding: 100px;
+    font-size: 50px;
+    justify-content: center;
+    
+}
+
+.fullstack {
+    display: flex;
+    color: rgb(1, 111, 255);
+    padding: 100px;
+    font-size: 50px;
+    justify-content: center;
+    
+}
+#projeto {
+    
+    text-align: center;
+    color: rgb(1, 111, 255);
+    font-size: 40px;
+    
+        
+}
+
+#certificado {
+    
+    text-align: center;
+    color: rgb(1, 111, 255);
+    font-size: 40px;
+
+    
+        
+}
+
+.descricao-01{
+    display: flex;
+    font-size: 15px;
+    color: rgb(133, 135, 138);
+    justify-content: center;  
+
   }
-  
-  
-  .curiosidade {
-    color: rgb(255, 255, 255);
-    width: 350px;
+  .banner01 {    
+    display:flex;
+    justify-content: center;
+    padding: 15px;
+    font-size: larger;
+    text-align: justify;
+}
+
+button {    
+    gap: 50px;
+    width: 200px; 
+    height: 50px;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(1, 111, 255);
+    border-radius: 10px;
+    border-color: rgb(1, 111, 255);
+    box-shadow: 10px 5px 5px black;
+}
+
+.button { 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+button:hover {
+    background-color: rgb(1, 111, 255); 
+    color:rgb(255, 255, 255);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC , transparent);
+}
+
+.projetos{
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;  
+    
+}
+
+.imagemProjeto{
+    display: flex;
+    width: 300px;
+    justify-content: center;
+}
+
+.imagemProjeto:hover {
+    border-color: rgb(1, 111, 255); 
+    border-style: outset;
+    border-width: 5px;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);         
+}
+
+.docsProjeto {    
+    width: 300px;
+    height: 200px;    
+    
+}
+
+.docs div {
+    display: inline-block; 
+     
+    
+}
+.docsProjeto:hover {
+    border-color: rgb(1, 111, 255);
+    border-style: inset;
+    border-width: 5px; 
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);    
+     
+}
+#eu {
+    display: inline-block;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 60px 30px rgb(1, 111, 255);;
+}
+
+.banner02 {    
+    display:inline-block;
+    padding: 10px;
+    font-size: larger;
     text-align: justify;
     
-    /* text-align: center;
-    color: white;
-    padding: 10px;
-   
-    height: 500px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    background-color: white; */
-  }
-  
-  #curiosidade-titulo {
-    color: white;
-  }
-  
-  .titulos-imagens {
-    color: white;
-  }
-  
-  #video{
-    display: flex;
-    flex-direction: wrap;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: rgb(249, 206, 75);
-  }
-  
-  .contato {
-    display: flex;
-    justify-content: space-around;
-    padding: 3px;
-  }
-  
-  .curiosidade-card {
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px;
-  }
-  
-  .curiosidade-card p {
-    font-size: 15px;
-    font-family: 'Playfair Display', serif;
-  }
-  
-  @media (max-width: 1280px) {
-     
-    .Card {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-      
-  }
-  
-  @media (max-width: 450px) {
-  
-    .menu-topo {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
     
-    .lista-menu {
-      flex-direction: column;
-      align-content: center;
-    }
-  
-    .banner {
-      width: 100%;
-    }
-  
-   
+}
+.bannerFundo {    
+    display:flex;
+    justify-content: flex-end; 
+    background-color: rgb(202, 202, 202);
+}
+footer {    
+    height: 100px;
+    
+    
   }
-  
-  
-  
-  
+
+  .contato1 {
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+    
+  }
+  #back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+  }
+
+  .contato1 a :hover {
+    border-color: rgb(1, 111, 255);
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 10px; 
+     
+
+  }
+
+
