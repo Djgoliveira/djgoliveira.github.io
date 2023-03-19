@@ -38,6 +38,3 @@ motivoVisitante.addEventListener("keyup", function(){
         validacao2.style.color="red";
     }
 })
-
-export const nomeVisitante;
-
