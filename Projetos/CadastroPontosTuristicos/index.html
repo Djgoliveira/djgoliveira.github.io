@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário de Cadastro de Viagens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="menu-topo">
+      <a href="https://www.digitalhouse.com/"> <img src="./img/logoDigitalHouse.png" alt="digitalHouse"></a>
+      <ul class="lista-menu">
+        <li class="home"><a href="./index.html">Cadastro</a></li>
+        <li><a href="#ElementoPai">Cards</a></li>
+        <li><a href="#rodape">Sobre nós</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+
+      <div class="content">
+        <!--FORMULÁRIO DE CADASTRO-->
+
+        <form method="dialog" action="#Cards" id="cadastro" onsubmit="return validateForm()">
+          <div>
+            <h1>Cadastro de Pontos Turísticos</h1>
+            <p>
+              <label for="nome_cad">Cidade</label>
+              <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Nome da Cidade"
+                minlength="4" />
+              <small id="smallCidade"></small>
+            </p>
+            <p>
+              <label for="local_cad">Ponto turistico</label>
+              <input id="NomeLocal_cad" name="NomeLocal_cad" required="required" type="text" placeholder="Nome do local"
+                minlength="4" />
+              <small id="localSmall"></small>
+            </p>
+            <p>
+              <label for="url_cad">Url da Imagem</label>
+              <input id="url_cad" name="url_cad" required="required" type="text" placeholder="Url da Imagem" />
+              <small id="imgSmall"></small>
+            </p>
+            <p>
+              <label for="email_cad">Descrição</label>
+              <textarea id="descricao_cad" rows="10" cols="60" required="required" minlength="4"></textarea>
+              <small id="descricaoSmall"></small>
+            </p>
+            <div>
+              <button id="btn" type="submit" value="Cadastrar" onclick="Cadrastrar()">Cadastrar</button>
+              <small id="btnSmall"></small>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    <div id="ElementoPai">
+      <dialog></dialog>
+    </div>
+  </main>
+  <footer>
+    <div id="rodape">
+      <div class="item-rodape">
+        <p class="nomes">Douglas Henrique F de Oliveira</p>
+        <p class="dev">Responsável pelo desenvolvimento do site</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/douglas-oliveira-86420372/">
+            <img src="./img/linked.png" class="linked" title="Linkedin Douglas Henrique">
+          </a>
+          <a href="https://github.com/Djgoliveira">
+            <img src="./img/gitHub.png" title="GitHub Douglas Henrique" alt="GitHub">
+          </a>
+        </div>
+      </div>
+      <div class="item-rodape">
+        <p class="nomes">Gustavo Florencio</p>
+        <p class="dev">Responsável pelo desenvolvimento do site</p>
+        <div class="links">
+          <a href="#">
+            <img src="./img/linked.png" class="linked" title="Linkedin Gustavo Florencio">
+          </a>
+          <a href="https://github.com/GustavoFlorenci0">
+            <img src="./img/gitHub.png" title="GitHub Gustavo Florencio" alt="GitHub">
+          </a>
+        </div>
+      </div>
+      <div class="item-rodape">
+        <p class="nomes">Rafael</p>
+        <p class="dev">Responsável pelo desenvolvimento do site</p>
+        <div class="links">
+          <a href="#">
+            <img src="./img/linked.png" class="linked" title="Linkedin Rafael">
+          </a>
+          <a href="#">
+            <img src="./img/gitHub.png" title="GitHub Rafael" alt="GitHub">
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="rodape-fim">Checkpoint 1 desenvolvido em 2023</p>
+  </footer>
+  <script src="./javaScript/validacoes.js"></script>
+  <script src="./javaScript/codigo.js"></script>
+</body>
+
+</html>

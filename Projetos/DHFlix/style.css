@@ -1,0 +1,844 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+
+}
+
+html {
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+    
+}
+
+input:active {
+    background-color: #46434310;
+}
+
+main {
+    display: block;
+}
+
+.home {
+    color: #E51B3E;
+}
+
+.filme {
+    border-radius: 15px;
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+li:hover {
+    text-decoration: none;
+    border-radius: 10px;
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.2);
+}
+
+.botao {
+    visibility: hidden;
+    margin-left: 80px;
+}
+
+.lista-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    font-size: 19px;
+    color: #171717;
+}
+
+.menu-topo {
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.banner {
+    background-image: url(./img//img/imagemFundo.png);
+    background-repeat: no-repeat;
+    height: 1023px;
+    background-size: cover;
+    box-shadow: 6px 6px 13px 0px rgba(20, 20, 20, 0.633);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+    justify-content: center;
+
+}
+
+
+.conteudo-banner::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.conteudo-banner h1 {
+    color: #E51B3E;
+    font-weight: 900;
+    font-size: 62px;
+}
+
+.conteudo-banner p {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 30px;
+}
+
+.botao-explorar {
+    width: 320px;
+    height: 70px;
+    background: rgba(51, 187, 105, 0.05);
+    border: 1px solid #33BB69;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+}
+
+.botao-explorar:hover {
+    cursor: pointer;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s
+}
+
+.banner-cards {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.card-filme {
+    height: 650px;
+    display: inline;
+}
+
+#itens {
+    font-size: 44px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.titulos {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.texto-filme {
+    background-color: #f4f4f4;
+    position: relative;
+    top: -250px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 329px;
+    height: 386px;
+}
+
+.descricao {
+    width: 311px;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 290;
+    text-align: justify;
+    padding: 10px;
+}
+
+.botao-abrir {
+    margin: 50px 30px;
+    background-color: #33BB69;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 20px;
+    border-color: #33BB69;
+    border-style: none;
+    position: static;
+    letter-spacing: 2px;
+}
+
+.botao-abrir:hover {
+    cursor: pointer;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.5s
+}
+
+
+.flix {
+    animation: animation 2s ease 0s 1 normal forwards;
+}
+
+
+
+@keyframes animation {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* Rodapé */
+
+#rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #171717;
+    padding: 10px;
+}
+
+.item-rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.rodape-fim {
+    background-color: #171717;
+    text-align: center;
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.nomes {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.foto {
+    display: flex;
+}
+
+.foto img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.dev {
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+
+/* Página de login */
+
+.caixa-login {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 530px;
+    height: 510px;
+    border-radius: 12px;
+    margin: 180px 0 140px 0;
+}
+
+.fundo-login {
+    background-image: url(./img/img/imagemFundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.formulario-login input {
+    border: 1px solid #A4A4A4;
+    border-radius: 12px;
+    height: 60px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.formulario-login label {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.botao-entrar {
+    margin: 30px;
+    height: 60px;
+    background-color: #33BB69;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    height: 60px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #33bb699a;
+}
+
+input:hover {
+    border-color: #E51B3E;
+}
+
+/* Páginas Movies */
+
+.movies-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-movie img {
+    width: 70vw;
+    height: 35vw;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.movies {
+
+    text-align: justify;
+    padding: 0 200px;
+}
+
+.titulo-filme h1 {
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    height: 60px;
+}
+
+.titulo-capa {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    width: 1280px;
+}
+
+.titulo-capa h1 {
+    font-size: 50px;
+    text-align: center;
+    width: 329px;
+}
+
+.titulo-capa img {
+    width: 329px;
+}
+
+div.titulo-filme {
+    height: 60px;
+}
+
+.imagens-filme {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1280px;
+    background-color: #171717;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagens-filme img {
+    width: 400px;    
+    padding: 20px;
+    
+}
+
+.diretor-info {
+    
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    display: flex;
+    margin-top: -40px;
+    
+}
+
+.titulo-capa p {
+    text-align: justify;
+    padding-left: 30%;
+    padding-top: 5%;
+}
+
+.btn{
+    display:inline-flex;
+    justify-content: flex-end;
+    height: 50px;
+    gap: 10px;        
+}
+
+.botao-filmes{
+    background-color: #030303;
+    border-color: #A4A4A4;
+    border-style: none;
+    border-radius: 5px;
+    width: 100%;
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+.btn button {
+    width: 200px;
+    height: 30px;
+}
+
+.botao-filmes:hover {
+    
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(1.1);
+}
+
+.bg_video{
+    width: 1280px;  
+}
+
+
+
+.sinopse {
+    font-style: bold;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: -40vh;
+}
+
+.diretor-nomes {
+    margin-top: -55px;
+    
+    display: flex;
+    color: rgba(0, 133, 255, 0.75);
+}
+
+
+.trailer h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 15px 0 0 0;
+}
+
+#youtube {
+    margin: 15px;
+    width: 1280px;
+    height: 650px;
+}
+
+#critica {
+    margin-top: -25px;
+    margin-bottom:-55px;
+    font-size: large; 
+      
+}
+#img {
+    margin-top: 30px;
+}
+
+.nota {
+    display: flex;
+    width: 329px;
+    height: 20px;
+    background-color: #171717;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nota img{
+    width: 20px; 
+
+}
+
+.notaE {
+    display: flex;
+    gap: 2px;
+    
+}
+.notaE img {
+    width: 20px;
+    
+}
+
+#back-to-top {
+    display: flex;    
+    background-color: #E51B3E;   
+    
+  }
+
+
+
+
+
+
+
+/* Responsividade */
+
+@media (max-width: 428px) {  
+
+    header {
+        width: 100%;
+        height: 100px;
+    }
+
+   .botao {
+        visibility: visible;
+    }
+
+    .lista-menu {
+        visibility: hidden;
+        flex-direction: column;
+    }
+
+    .menu-topo{
+        display: inline-flex;
+        justify-content: space-around;
+        height: 100px; 
+        width: 100%; 
+             
+    }
+
+   
+
+     .banner {
+        background-image: url(./img/img/fundobanner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .titulo-capa {
+        width: 100%;
+    }
+
+    .titulo-capa p {
+        width: 438px;
+        margin-top: 10%;
+
+    }
+
+    #rodape {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        gap: 25px;
+    }
+
+    .conteudo-banner h1 {
+        font-weight: 900;
+        font-size: 40px;
+    }
+
+    .conteudo-banner p {
+        font-size: 15px;
+        font-weight: 300;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .botao-explorar {
+        width: 200px;
+        height: 60px;
+    }
+
+    .login-box {
+        max-width: 80%;
+    }
+
+    .fundo-login {
+        background-image: url(./img/img/imagemFundo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagens-filme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .capa-filme {
+        width: 350px;
+        align-items: center;
+    }
+
+    .texto-capa{
+        display: block;
+        text-align: justify;
+        width: 420px;
+        margin-left: 4px;
+    }
+
+    .texto-capa .capa-filme {
+        align-items: center;
+        justify-content: center; 
+        width: 420px;
+    }
+
+    .texto-capa p {
+        text-align: justify;
+        margin-left: -15%; 
+        margin-bottom: 5%;      
+    }
+
+    .diretor-info {
+        margin-bottom: 2%;
+    }
+
+    #critica{
+    margin-bottom: 2%;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 12vh;
+        margin-bottom: 2%;
+    }
+    
+    .area-login {
+        max-width: 80%;
+    }
+
+    .area-login img {
+        max-width: 90%;
+    }
+
+    #youtube {
+        width: 400px;
+        height: 225px;
+    }
+
+    .banner-movie img {
+        width: 80vw;
+        height: 40vw;
+        margin-top: 300px;
+        border-radius: 20px;
+    }
+
+    .movies {
+        padding: 0 50px;
+    }  
+    
+    .bg_video{
+    width: 100%;   
+    }
+
+    .nota {
+        display: flex;
+        width: 329px;
+        height: 20px;
+        background-color: #171717;
+        margin-left: 50px;       
+        
+    }
+    
+    .nota img{
+        width: 20px; 
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .notaE {
+        display: flex;
+        gap: 2px;
+        
+    }
+    .notaE img {
+        width: 20px;
+        
+    }
+
+
+}
+/* ESTÁ DANDO ERRO NO RESTANTE DAS RESOLUÇÕES PRECISA SER VISTO
+@media (max-width: 688px) {
+
+    
+        
+
+    .lista-menu {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 12vh;
+        margin-bottom: 2%;
+    }
+      
+
+    .capa-filme {
+        margin-bottom: 50%;
+        justify-content: center;
+    }
+
+    .texto-capa{
+        display: block;
+        text-align: center;
+        width: 688px;
+    }
+
+    .texto-capa p {
+        text-align: justify;
+        margin-left: -10vh; 
+        margin-bottom: 5%; 
+        width: 690px;     
+    }
+
+    .diretor-info {
+        margin-bottom: 2%;
+    }
+
+    #critica{
+    margin-bottom: 2%;
+    }
+
+    #rodape {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .conteudo-banner p {
+        font-size: 22px;
+        font-weight: 300;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .botao-explorar {
+        width: 200px;
+        height: 60px;
+    }
+
+    .movies {
+        padding: 0 50px;
+    }
+
+    .banner-movie img {
+        width: 80vw;
+        height: 40vw;
+        margin-top: 200px;
+        border-radius: 20px;
+    }
+
+    #youtube {
+        width: 608px;
+        height: 425px;
+    }
+
+    .imagens-filme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+} */
